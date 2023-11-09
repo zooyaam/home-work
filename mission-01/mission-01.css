@@ -1,0 +1,168 @@
+/* 변수 */
+:root {
+  --gray-100: #f3f3f3;
+  --gray-500: #c4c4c4;
+  --gray-800: #4e4e4e;
+  --White: #fff;
+  --opacity-20: rgba(0, 0, 0, 0.2);
+  --grayscale-gray-5: #555;
+  --blue-600: #0074e9;
+}
+
+/* 기본 스타일 */
+body {
+  background: var(--gray-100);
+  font-family: "Noto Sans", sans-serif;
+}
+
+.box-group {
+  width: 502px;
+  height: 630px;
+  margin: 0 auto;
+}
+
+.ginger-tea {
+  background: var(--White);
+  width: 502px;
+  height: 310px;
+  border: 1px solid var(--gray-500);
+  margin-bottom: 10px;
+}
+
+.handcream,
+.barley-tea {
+  background: var(--White);
+  width: 243px;
+  height: 310px;
+  border: 1px solid var(--gray-500);
+}
+
+/* 작은 박스 배치 */
+.handcream {
+  float: left;
+}
+.barley-tea {
+  float: right;
+}
+
+.ginger-tea,
+.handcream,
+.barley-tea {
+  position: relative;
+}
+
+/* 문구 스타일 */
+.ginger-tea h1 {
+  color: var(--gray-800);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.handcream h1,
+.barley-tea h1 {
+  color: var(--grayscale-gray-5);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+/* 문구 배치 */
+.ginger-tea h1 {
+  position: absolute;
+  bottom: 118px;
+  left: 28px;
+  width: 200px;
+  height: 37px;
+  margin: 0;
+  /* flex-shrink: 0;  존재하지 않는 속성 오류 */
+}
+
+.handcream h1,
+.barley-tea h1 {
+  width: 200px;
+  height: 27px;
+  /* flex-shrink: 0; 존재하지 않는 속성 오류 */
+  position: absolute;
+  top: 66px;
+  left: 21px;
+  text-align: center;
+  margin: 0;
+}
+
+/* 로고 배치*/
+.ottugi {
+  position: absolute;
+  top: 75px;
+  left: 73px;
+}
+
+.kamill,
+.gomgom {
+  position: absolute;
+  top: 14px;
+  left: 64px;
+}
+
+/* 상품 이미지 배치 */
+.ginger-product {
+  position: absolute;
+  bottom: 20px;
+  right: 28px;
+}
+
+.hand-product,
+.barley-product {
+  position: absolute;
+  bottom: 14px;
+  left: 23px;
+}
+
+/* 버튼 이미지 스타일 (활성화 전) */
+.early-button {
+  width: 42px;
+  height: 42px;
+  /* flex-shrink: 0; 존재하지 않는 속성 오류 */
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  fill: var(--opacity-20);
+}
+
+/* 구매 버튼 기본 스타일 해제 */
+.buy-button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* 구매 버튼 스타일 */
+.buy-button {
+  padding: 12px 18px 13px 20px;
+  /* justify-content: center;
+  align-items: center;
+  gap: 16px; 존재하지 않는 속성 오류 */
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: var(--blue-600);
+  color: var(--White);
+  display: none;
+}
+
+.buy-button img {
+  margin-left: 16px;
+}
+
+/* 구매 버튼 활성화 */
+.early-button:hover {
+  display: none;
+}
+
+.early-button:hover + .buy-button {
+  display: block;
+}
