@@ -1,0 +1,128 @@
+/* 변수 선언 */
+:root {
+  --unnamed: #fefefe;
+}
+
+/*  */
+.sr-only,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* 기본 디자인 설정 */
+body {
+  background: url(./images/background.png) no-repeat;
+  background-position: center -60px;
+  font-family: "Spoqa Han Sans";
+}
+
+/* 로그인 */
+.login {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/* 로그인 제목 영역 스타일 */
+.login-title {
+  margin: 0 auto;
+}
+
+h2 {
+  color: var(--unnamed);
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  margin: 24px;
+}
+
+p {
+  color: var(--unnamed);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+
+em {
+  font-size: 18px;
+  letter-spacing: -0.36px;
+  font-style: normal;
+}
+
+/* 600px 이하의 화면에 대한 스타일 */
+@media only screen and (max-width: 600px) {
+  body {
+    background-position: -330px -60px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+fieldset {
+  position: relative;
+  border: 0;
+}
+
+a {
+  text-align: right; /* 회원가입 링크를 오른쪽에 정렬 */
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 540px;
+  height: 48px;
+  background: none;
+  border-bottom: 0.5px solid var(--unnamed);
+}
+
+input::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.02em;
+  color: #fefefe;
+  position: absolute;
+  top: 18px;
+  left: 8px;
+}
+
+.user-email {
+  margin-top: 100px;
+  margin-bottom: 31px;
+}
+
+.login-remember {
+  display: inline;
+  width: 77px;
+  height: 16px;
+  top: 512px;
+  left: 450px;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--unnamed);
+  margin-top: 14px;
+}
+
+#email-save {
+  width: 16px;
+  height: 16px;
+  margin-top: 14px;
+}
