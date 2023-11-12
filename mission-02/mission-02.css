@@ -3,17 +3,10 @@
   --unnamed: #fefefe;
 }
 
-/*  */
-.sr-only,
-legend {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+/* 기본 디자인 설정 */
+html {
 }
 
-/* 기본 디자인 설정 */
 body {
   background: url(./images/background.png) no-repeat;
   background-position: center -60px;
@@ -22,34 +15,25 @@ body {
 
 /* 로그인 */
 .login {
-  margin: 0 auto;
   margin-top: 100px;
 }
 
-/* 로그인 제목 영역 스타일 */
-.login-title {
-  margin: 0 auto;
-}
-
+/* 로그인 타이틀 스타일 */
 h2 {
   color: var(--unnamed);
   text-align: center;
   font-size: 36px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
+  line-height: 36px;
   letter-spacing: -0.72px;
-  text-transform: uppercase;
-  margin: 24px;
+  margin-bottom: 24px;
 }
 
 p {
   color: var(--unnamed);
   text-align: center;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   letter-spacing: -0.24px;
 }
 
@@ -59,70 +43,115 @@ em {
   font-style: normal;
 }
 
-/* 600px 이하의 화면에 대한 스타일 */
+/* 반응형 화면 구성*/
 @media only screen and (max-width: 600px) {
   body {
     background-position: -330px -60px;
   }
 }
 
+/* 로그인 폼 */
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* min-width: 500px; */
 }
 
 fieldset {
   position: relative;
-  border: 0;
+  border: none;
 }
 
-a {
-  text-align: right; /* 회원가입 링크를 오른쪽에 정렬 */
+legend {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.user-email {
+  margin-top: 122px;
+  margin-bottom: 31px;
 }
 
 input {
   border: none;
-  outline: none;
   width: 540px;
   height: 48px;
   background: none;
   border-bottom: 0.5px solid var(--unnamed);
+  padding: 0;
+  margin: 0;
 }
 
 input::placeholder {
   font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
+  font-weight: 300;
   letter-spacing: -0.02em;
   color: #fefefe;
-  position: absolute;
-  top: 18px;
-  left: 8px;
-}
-
-.user-email {
-  margin-top: 100px;
-  margin-bottom: 31px;
+  padding-left: 8px;
+  /* line-height: 27px; */
+  /* position: absolute; */
+  /* top: 18px; */
+  /* left: 8px; */
 }
 
 .login-remember {
-  display: inline;
-  width: 77px;
-  height: 16px;
-  top: 512px;
-  left: 450px;
-  font-size: 12px;
-  line-height: 12px;
-  letter-spacing: -0.02em;
-  text-align: left;
-  color: var(--unnamed);
   margin-top: 14px;
+  height: 16px;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: var(--unnamed);
 }
 
 #email-save {
   width: 16px;
   height: 16px;
-  margin-top: 14px;
+  margin-right: 4px;
+  vertical-align: bottom;
+}
+
+.login-remember label {
+  margin-top: -10px;
+}
+/* 버튼 컨테이너 */
+/* a {
+  text-align: right;
+} */
+
+/* 버튼 */
+.button-container {
+  width: 540px;
+  height: 48px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+/* 로그인 버튼 */
+.login-button {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #24388d;
+  width: 260px;
+  height: 48px;
+  vertical-align: top;
+  border-radius: 8px;
+}
+
+/* 회원가입 링크 */
+.sign-up {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  border: 1px solid var(--unnamed);
+  color: var(--unnamed);
+  width: 260px;
+  height: 22px;
+  padding: 10px 0;
+  border-radius: 8px;
 }
