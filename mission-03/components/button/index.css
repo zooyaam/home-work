@@ -1,0 +1,18 @@
+.login,
+.promotion {
+  display: inline-block;
+  background-color: var(--red-500, #e50914);
+
+  & a {
+    color: var(--White, #fff);
+    text-decoration: none;
+  }
+}
+
+.promotion {
+  padding: 15px 20px;
+}
+
+.login {
+  padding: 12px 20px;
+}
