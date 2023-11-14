@@ -1,0 +1,13 @@
+:root {
+  --red-500: #e50914;
+  --gray-200: #c8c8c8;
+  --gray-300: #acacac;
+  --gray-400: #919191;
+  --gray-500: #757575;
+  --white: #ffffff;
+  --black: #010101;
+}
+
+body {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
