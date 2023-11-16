@@ -1,0 +1,72 @@
+body {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  background-color: #000;
+}
+
+.sr-only {
+  display: none;
+}
+
+.main-text > * {
+  margin-bottom: 1.75rem;
+}
+
+/* 메인 텍스트 영역 */
+.main-text {
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 3.56rem;
+
+  & h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.01px;
+    text-align: center;
+  }
+
+  & em {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.01px;
+  }
+
+  & p {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.008px;
+  }
+}
+
+/* 이메일 폼 영역 */
+.promotion-form {
+}
+
+.promotion-email {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.75rem;
+}
+
+.email-input {
+  width: 31.25rem;
+  padding: 1.125rem 1.25rem;
+  border: 0;
+}
+
+.promotion-desc {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.008px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .email-input {
+    width: 15.31rem;
+    border-radius: 30px;
+  }
+}
