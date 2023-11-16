@@ -1,0 +1,21 @@
+body {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+/* 데스크탑 배경 */
+@media (min-width: 375px) {
+  body {
+    /* background: url(./../images/background.png),
+      linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%); */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.58) 0%, #000 100%),
+      url(./../images/background.png), lightgray 50% / cover no-repeat;
+  }
+}
+
+/* 모바일 배경 */
+@media (max-width: 375px) {
+  .header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%),
+      url(./../images/mobile-background.png);
+  }
+}
