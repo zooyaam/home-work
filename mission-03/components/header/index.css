@@ -1,0 +1,47 @@
+body {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 8.75rem;
+  /* background-color: yellow; */
+}
+.header-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80rem;
+  margin: 0 12.5rem;
+  /* background-color: blue; */
+}
+
+.logo-wrapper {
+  width: 8.75rem;
+  margin-right: 15rem;
+}
+
+.header-button {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.login {
+  margin-left: 1.5rem;
+}
+
+/* 모바일 환경 */
+@media (max-width: 768px) {
+  .header-container {
+    margin: 0 1.56rem;
+  }
+
+  .logo-wrapper {
+    width: 6rem;
+    margin-right: 3.5rem;
+  }
+}

@@ -4,13 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NETFLIX - header</title>
+    <link rel="stylesheet" href="./../../css/style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="logo-wrapper">
-        <a href="/" class="logo-link">
-          <img src="./../../images/logo.png" alt="NETFLIX" />
-        </a>
+      <div class="header-container">
+        <div class="logo-wrapper">
+          <a href="/" class="logo-link">
+            <img src="./../../images/logo.png" alt="NETFLIX" />
+          </a>
+        </div>
+
+        <div class="header-button">
+          <select name="language" id="lang">
+            <option value="ko">한국어</option>
+            <option value="en">English</option>
+          </select>
+
+          <div class="login">
+            <a href="/">로그인</a>
+          </div>
+        </div>
       </div>
     </header>
   </body>
