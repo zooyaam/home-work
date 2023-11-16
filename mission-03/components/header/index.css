@@ -8,7 +8,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 8.75rem;
-  /* background-color: yellow; */
 }
 .header-container {
   display: flex;
@@ -17,7 +16,6 @@ body {
   align-items: center;
   width: 80rem;
   margin: 0 12.5rem;
-  /* background-color: blue; */
 }
 
 .logo-wrapper {
@@ -36,12 +34,21 @@ body {
 
 /* 모바일 환경 */
 @media (max-width: 768px) {
+  .header {
+    height: 5rem;
+  }
+
   .header-container {
     margin: 0 1.56rem;
+    flex-flow: row wrap;
   }
 
   .logo-wrapper {
     width: 6rem;
     margin-right: 3.5rem;
+  }
+
+  .header-button {
+    flex-flow: row wrap;
   }
 }
