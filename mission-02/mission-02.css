@@ -98,22 +98,31 @@ input::placeholder {
 
 .login-remember {
   margin-top: 14px;
-  height: 16px;
-  font-size: 12px;
+  /* height: 16px; */
+  /* font-size: 7px; */
   letter-spacing: -0.02em;
   color: var(--unnamed);
+  /* display: flex; */
+  align-items: center;
 }
 
 #email-save {
+  display: block;
   width: 16px;
   height: 16px;
   margin-right: 4px;
-  vertical-align: bottom;
+  vertical-align: middle;
+  float: left;
 }
 
 .login-remember label {
-  margin-top: -10px;
+  /* margin-top: -10px; */
+  vertical-align: middle;
+  font-size: 12px;
+  padding: 10px 0;
+  /* line-height: 1; */
 }
+
 /* 버튼 컨테이너 */
 /* a {
   text-align: right;
@@ -142,16 +151,19 @@ input::placeholder {
 
 /* 회원가입 링크 */
 .sign-up {
-  display: inline-block;
+  display: flex;
   font-size: 20px;
   font-weight: 700;
-  line-height: 30px;
   letter-spacing: -0.02em;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--unnamed);
   color: var(--unnamed);
   width: 260px;
-  height: 22px;
+  height: 30px;
   padding: 10px 0;
   border-radius: 8px;
+  /* vertical-align: top; */
+  text-decoration: none;
 }
