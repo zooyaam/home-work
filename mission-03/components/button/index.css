@@ -44,7 +44,6 @@ select option {
 /* 로그인 버튼 */
 .login {
   width: 2.8rem;
-  /* padding: 0.75rem 1.25rem; */
   padding: 0.5rem 0.78rem;
   border-radius: 4px;
 }
@@ -71,5 +70,6 @@ select option {
     width: 8rem;
     font-size: 1rem;
     border-radius: 30px;
+    margin-top: 0.75rem;
   }
 }
