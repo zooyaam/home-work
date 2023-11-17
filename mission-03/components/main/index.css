@@ -26,7 +26,8 @@ body {
     text-align: center;
   }
 
-  & em {
+  & em,
+  .em-p-text {
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
@@ -40,10 +41,11 @@ body {
   }
 }
 
-/* 이메일 폼 영역 */
-.promotion-form {
+em {
+  display: flex;
 }
 
+/* 이메일 폼 영역 */
 .promotion-email {
   display: flex;
   justify-content: center;
@@ -65,8 +67,37 @@ body {
 }
 
 @media (max-width: 768px) {
+  .main-text > * {
+    margin-bottom: 1.5rem;
+  }
+
+  .main-text {
+    margin-top: 3.8rem;
+
+    & h1 {
+      font-size: 2.5rem;
+    }
+
+    & em {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    & p {
+      text-align: center;
+    }
+  }
+
+  .promotion-email {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
   .email-input {
     width: 15.31rem;
+    padding: 0.5rem 1.25rem;
     border-radius: 30px;
+    font-size: 14px;
   }
 }
