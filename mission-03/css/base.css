@@ -3,7 +3,7 @@ body {
 }
 
 /* 데스크탑 배경 */
-@media (min-width: 375px) {
+@media (min-width: 768px) {
   body {
     /* background: url(./../images/background.png),
       linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%); */
@@ -13,9 +13,10 @@ body {
 }
 
 /* 모바일 배경 */
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%),
       url(./../images/mobile-background.png);
+    background-size: cover;
   }
 }
