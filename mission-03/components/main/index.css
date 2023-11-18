@@ -1,10 +1,14 @@
 body {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
-  background-color: #000;
 }
 
 .sr-only {
   display: none;
+}
+
+.main-container {
+  margin-top: 3.56rem;
+  margin-bottom: 14.5rem;
 }
 
 .main-text > * {
@@ -17,7 +21,6 @@ body {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  margin-top: 3.56rem;
 
   & h1 {
     font-size: 3rem;
@@ -67,13 +70,16 @@ em {
 }
 
 @media (max-width: 768px) {
+  .main-container {
+    margin-top: 3.8rem;
+    margin-bottom: 6.3rem;
+  }
+
   .main-text > * {
     margin-bottom: 1.5rem;
   }
 
   .main-text {
-    margin-top: 3.8rem;
-
     & h1 {
       font-size: 2.5rem;
     }
