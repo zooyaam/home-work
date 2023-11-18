@@ -5,6 +5,7 @@ body {
 
 .footer {
   color: #acacac;
+  border-top: 4px solid #2f2f2f;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +19,7 @@ body {
 
 .footer-container {
   width: 80rem;
-  margin-top: 3rem;
+  margin: 3rem 2rem;
   padding: 0 1.6rem;
 }
 
@@ -65,7 +66,7 @@ body {
 /* 모바일 환경 */
 @media (max-width: 768px) {
   .footer-container {
-    margin-top: 2.5rem;
+    margin: 2.5rem 0;
   }
   .guide-text {
     display: block;
