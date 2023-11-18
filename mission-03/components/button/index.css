@@ -3,7 +3,7 @@ body {
 }
 
 /* 언어 선택 버튼 */
-select {
+.select-lang select {
   font-size: 1rem;
   width: 7.1rem;
   height: 2.5rem;
@@ -57,7 +57,7 @@ select option {
 
 /* 모바일 환경 */
 @media (max-width: 768px) {
-  select {
+  .select-lang select {
     height: 1.875rem;
   }
 
