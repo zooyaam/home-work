@@ -6,7 +6,7 @@ body {
   display: none;
 }
 
-.main-container {
+.main {
   margin-top: 3.56rem;
   margin-bottom: 14.5rem;
 }
@@ -69,14 +69,11 @@ em {
   text-align: center;
 }
 
+/* 모바일 환경 */
 @media (max-width: 768px) {
-  .main-container {
+  .main {
     margin-top: 3.8rem;
     margin-bottom: 6.3rem;
-  }
-
-  .main-text > * {
-    margin-bottom: 1.5rem;
   }
 
   .main-text {
@@ -91,6 +88,10 @@ em {
 
     & p {
       text-align: center;
+    }
+
+    & > * {
+      margin-bottom: 1.5rem;
     }
   }
 
