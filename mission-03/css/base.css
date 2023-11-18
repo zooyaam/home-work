@@ -5,10 +5,12 @@ body {
 /* 데스크탑 배경 */
 @media (min-width: 768px) {
   body {
-    /* background: url(./../images/background.png),
-      linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%); */
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.58) 0%, #000 100%),
-      url(./../images/background.png), lightgray 50% / cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%),
+      url(./../images/background.png) #000 no-repeat;
+    background-size: 100%;
+  }
+  .footer {
+    background-color: #000;
   }
 }
 
@@ -17,6 +19,6 @@ body {
   .header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%),
       url(./../images/mobile-background.png);
-    background-size: cover;
+    background-size: 100%;
   }
 }
